@@ -3,7 +3,8 @@ using System.Collections;
 
 public class BlockScript : MonoBehaviour {
     private Vector3 chosenDestination; //Destination to move to after LerpUpdate
-    private Vector3 nextDestination; 
+    private Vector3 nextDestination;
+    public float distance;
 	// Use this for initialization
 	void Start () {
         chosenDestination = transform.position;
@@ -12,7 +13,7 @@ public class BlockScript : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
-        nextDestination = transform.position - new Vector3(0, 1, 0);
+        nextDestination = transform.position - new Vector3(0, distance, 0);
         transform.position = Vector3.Lerp(transform.position, chosenDestination, Global.SPEED); 
 	}
 

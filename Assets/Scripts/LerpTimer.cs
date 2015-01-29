@@ -2,6 +2,8 @@
 using System.Collections;
 
 public class LerpTimer : MonoBehaviour {
+    /*Times and execute a Lerp Loop*/
+
     public float timer; //In seconds
     public float lerpTime;
 	// Use this for initialization

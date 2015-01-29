@@ -8,7 +8,6 @@ public class PlayerScript : MonoBehaviour {
 	// Use this for initialization
 	void Start () {
         Global.LerpList.Add(gameObject);
-        Debug.Log(Global.LerpList);
 	}
 	
 	// Update is called once per frame
