@@ -18,7 +18,7 @@ public class PlayerScript : MonoBehaviour {
             nextDestination = mouse_pos;
         }
 
-        transform.position = Vector3.Lerp(transform.position, chosenDestination, Global.SPEED); 
+        transform.position = Vector3.Lerp(transform.position, chosenDestination, Global.SPEED*2); 
 	}
 
     void LerpUpdate() {
