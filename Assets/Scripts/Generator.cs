@@ -5,6 +5,7 @@ public class Generator : MonoBehaviour {
     /*Generate blocks to fall out of the sky*/
 
     public GameObject StandardBlock;
+    public GameObject SpinningBlock;
 
 	// Use this for initialization
 	void Start () {
@@ -18,7 +19,7 @@ public class Generator : MonoBehaviour {
 
     void LerpUpdate() {
         Vector2 location = randomLocation(0, 1, 1, 1.2f);
-        Instantiate(StandardBlock, location, Quaternion.identity);
+        Instantiate(SpinningBlock, location, Quaternion.identity);
     }
 
     Vector2 randomLocation(float x_min, float x_max, float y_min, float y_max) {
